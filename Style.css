@@ -206,7 +206,7 @@ header aside .subscriptions .cards .card .content p{
 header article nav{
     width: 100%;
     height: 9%;
-    /* border: 1px solid #fff; */
+    border: 1px solid #fff;
     border-radius: 0px 20px 0px 0px;
     padding:0px 30px;
     display: flex;
@@ -219,7 +219,7 @@ header article nav button{
     border-radius: 5px;
     border: none;
     outline: none;
-    background: #663da6;
+    background: #926ecc;
     color: #fff;
     font-weight: 400;
     
@@ -247,6 +247,163 @@ header article nav input::placeholder{
 }
 header article nav i{
     color:var(--color-4);
-    font-size: 13px;
+    font-size: 14px;
     transition: .5s linear;
+}
+header article nav .right-bx{
+    width:38%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header article nav .right-bx i{
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s linear;
+    padding-bottom: 6px;
+}
+header article nav .right-bx i:hover{
+    color:#fff;
+}
+header article nav .right-bx button{
+    padding: 0px 20px;
+    background: rgb(184, 184, 184,.2);
+    border: 2px solid rgb(184, 184, 184,.2);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    transition: 0.5s linear;
+}
+header article nav .right-bx button span{
+    margin: 2px 0px  0px 8px;
+}
+
+/* battery active class */
+header article nav .right-bx .active-battery{
+    background:#663da6;
+    box-shadow: 0px 0px 20px #663da6;
+    
+}
+header article nav .right-bx .user-data{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+header article nav .right-bx .user-data h6{
+    width: 70px;
+    color:var(--color-4);
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+header article nav .right-bx .user-data h6{
+    width: 70px;
+    color:var(--color-4);
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+header article nav .right-bx .user-data h5{
+    color: #fff;
+    background: #663da6;
+    border-radius: 50%;
+    padding: 8px 9px;
+    font-size:11px;
+    margin: 0px 5px;
+    transition: 0.5s linear;
+}
+header article nav .right-bx .user-data i{
+    color:var(--color-2);
+    font-size: 12px;
+    transition: .5s linear;
+}
+header article nav .right-bx .user-data i:hover{
+    transform: rotate(180deg);
+}
+header article nav .right-bx .user-data .card{
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    border: 1px solid #fff;
+    top: 50px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header article nav .right-bx .user-data .card{
+    position: absolute;
+    width: 130px;
+    height: 0px;
+    border: 1px solid #fff;
+    top: 50px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity:0;
+    transition: 1s linear; 
+}
+header article nav .right-bx .user-data:hover .card{
+    height: 200px;
+    opacity: 1;
+    overflow: unset;
+}
+header article nav .right-bx .user-data .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184,.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index:-1 ;
+}
+header article nav .right-bx .user-data .card::after{
+    content: '';
+    position: absolute;
+    border-top: 15px solid rgb(184, 184, 184,.1);
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    top: -10px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+header article nav .right-bx .user-data .card img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+header article nav .right-bx .user-data .card h6{
+    /* width: unset;
+    overflow: hidden; */
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    transition: .5s linear;
+}
+header article nav .right-bx .user-data .card p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.5s linear;
+}
+header article nav .right-bx .user-data .card .card-csgo-img{
+    width: 110px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 15px;
 }
