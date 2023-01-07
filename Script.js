@@ -49,7 +49,7 @@ navigator.getBattery().then(battery =>{
     battery_icon.value = battery.charing;
     // alert(battery_icon.value);
 
-    battert.addEventListener('chargingchange',() => {
+    battery.addEventListener('chargingchange',() => {
         switch (battery.charging) {
             case true:
                 battery_icon.classList.remove('bi-battery-half');
@@ -59,4 +59,4 @@ navigator.getBattery().then(battery =>{
                 break;
         }
     })
-})
+});
