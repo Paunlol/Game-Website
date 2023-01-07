@@ -258,7 +258,7 @@ header article nav .right-bx{
     justify-content:space-between;
 }
 header article nav .right-bx i{
-    color:#fff;
+    color:var(--color-4);
     font-size: 20px;
     cursor: pointer;
     transition: 0.5s linear;
